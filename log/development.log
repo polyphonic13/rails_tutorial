@@ -17408,3 +17408,1623 @@ Served asset /users.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 16:53:03 -0400
 Served asset /application.js - 304 Not Modified (5ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (1.1ms)[0m  [1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (4.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921215130')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921160120')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921165333')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921173500')[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:52 UTC +00:00], ["email", "example@railstutorial.org"], ["name", "Example User"], ["password_digest", "$2a$10$h1KBzuECO1AHHj/9AEglAuheXQm6EHVYa1KOHobcEP/2okfgKF/Mu"], ["remember_token", "OZ-wEHCJHLzodS1KHhXN2A"], ["updated_at", Mon, 24 Sep 2012 22:23:52 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-1@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:54 UTC +00:00], ["email", "example-1@railstutorial.org"], ["name", "Miss Angelina Huel"], ["password_digest", "$2a$10$s8jRvbJyW3YbguAKuBeYc.sPuOacZRaw79vjFaEK3bSmG7iFsRHdC"], ["remember_token", "79VuJYlCOJDHswZTV1iI9Q"], ["updated_at", Mon, 24 Sep 2012 22:23:54 UTC +00:00]]
+  [1m[35m (21.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-2@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:55 UTC +00:00], ["email", "example-2@railstutorial.org"], ["name", "Amara Waters"], ["password_digest", "$2a$10$gG.rMyjqOCFUIN4M6iRyNOOii.Y2pl0OFbRCpX8HTYORF9/o5wniO"], ["remember_token", "frXQ0B-ExjWF7f2hr0Ivrw"], ["updated_at", Mon, 24 Sep 2012 22:23:55 UTC +00:00]]
+  [1m[35m (25.6ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-3@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:56 UTC +00:00], ["email", "example-3@railstutorial.org"], ["name", "Vivien Kihn"], ["password_digest", "$2a$10$eqMeuS7jfn/GC5zMCBe77O2OhcKZNdNPHMvHqZHPICCVZ1ppCgv9K"], ["remember_token", "TqVFiPEuHg3SI5KORXESfg"], ["updated_at", Mon, 24 Sep 2012 22:23:56 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-4@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:57 UTC +00:00], ["email", "example-4@railstutorial.org"], ["name", "Kelsi Huels MD"], ["password_digest", "$2a$10$u7gRzjjPJbubOaiC3a0nR.U.PQ2alyt5xQtV9YkwIIaNJ/LjXn/QW"], ["remember_token", "TvSNbiWVNFZh_YW8770IYA"], ["updated_at", Mon, 24 Sep 2012 22:23:57 UTC +00:00]]
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (2.8ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-5@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:58 UTC +00:00], ["email", "example-5@railstutorial.org"], ["name", "Destiney Cronin"], ["password_digest", "$2a$10$77SVAb08VM5FKOLPtZrGC.jBCyLh.3VU1FEsaNdBtiWB9VmmscWRq"], ["remember_token", "ZY5Dl0vJ5rRDA3zqBn8YDw"], ["updated_at", Mon, 24 Sep 2012 22:23:58 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-6@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:59 UTC +00:00], ["email", "example-6@railstutorial.org"], ["name", "Marquise Anderson"], ["password_digest", "$2a$10$t7BmVjTchAwJoN.ZnWllQ.If1EHN/MX2gCJ09BpIQd.orlWUC9gRS"], ["remember_token", "FxB5w4kZ6AfLn-moPQGSwg"], ["updated_at", Mon, 24 Sep 2012 22:23:59 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-7@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (11.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:23:59 UTC +00:00], ["email", "example-7@railstutorial.org"], ["name", "Dusty VonRueden"], ["password_digest", "$2a$10$CNUbAvFPPjlqcsZQiwqJzODFAdNLekB6m0eHPqtxGluk3yyIV2c6G"], ["remember_token", "3JZ-d5s4ah0w1QtuNNQOtA"], ["updated_at", Mon, 24 Sep 2012 22:23:59 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-8@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:00 UTC +00:00], ["email", "example-8@railstutorial.org"], ["name", "Coralie Haley"], ["password_digest", "$2a$10$fINQFkTFf6PYjEq7grr68e7r0rCiR5GMOYn2fXC9j709yEN9bBmE2"], ["remember_token", "mqdJqN5T2uhXqVpH6QsywQ"], ["updated_at", Mon, 24 Sep 2012 22:24:00 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-9@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00], ["email", "example-9@railstutorial.org"], ["name", "Nestor Quitzon"], ["password_digest", "$2a$10$pONzMdHPB6SacGrprVZACuDx88kSMy1jcIgC7go6fxigpW6GzUQ5W"], ["remember_token", "C3YwuSopv3-Biw157p9PYg"], ["updated_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-10@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00], ["email", "example-10@railstutorial.org"], ["name", "Hipolito Glover"], ["password_digest", "$2a$10$M4bjMlITTVbmtvBuO5tU0.Bo8al7dMgfwpqfCA9JrodSQI9yj1HWy"], ["remember_token", "t4uBeCemjkw-hGH9RvfwYg"], ["updated_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-11@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00], ["email", "example-11@railstutorial.org"], ["name", "Alexandria Walsh"], ["password_digest", "$2a$10$zJbb71NCL7.gC24DOeQsv.DVE4yPN8YUDFM4Lomy35nqOMYwa.EbG"], ["remember_token", "DDyGTPpkiGAa45jwAwSoHg"], ["updated_at", Mon, 24 Sep 2012 22:24:01 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-12@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:02 UTC +00:00], ["email", "example-12@railstutorial.org"], ["name", "Chanel Cruickshank"], ["password_digest", "$2a$10$3q212XQJrgAUKTs4maMDy.pgovpvMMYp89rIZcxtJwXJkDy2d2Boy"], ["remember_token", "h7SxEBJRthFpz3_dr583rg"], ["updated_at", Mon, 24 Sep 2012 22:24:02 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-13@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:02 UTC +00:00], ["email", "example-13@railstutorial.org"], ["name", "Lessie Batz"], ["password_digest", "$2a$10$V3TT1gu6gWw3zabk9QCe7elbHCSnBNRWRz3vtp0E.ebPQby/f.qJy"], ["remember_token", "jzLa37WPehGZtUbIQi3PRg"], ["updated_at", Mon, 24 Sep 2012 22:24:02 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-14@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00], ["email", "example-14@railstutorial.org"], ["name", "Willis Kautzer"], ["password_digest", "$2a$10$Wy0vBj1woriFbrdr1pQEp.TWi8xu13o5U9nFCFVG.QlkeRfiomUJi"], ["remember_token", "cUcm-L5M_yljGwNxZvQSuw"], ["updated_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-15@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00], ["email", "example-15@railstutorial.org"], ["name", "Deshawn Wisozk"], ["password_digest", "$2a$10$KMfHQq1v8ROMD.br54fM5uZJdWfS13679IUhcWZaZxpXzqQx/XoSC"], ["remember_token", "b-saQHN7MzsA4yUqahSKRA"], ["updated_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-16@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00], ["email", "example-16@railstutorial.org"], ["name", "Imelda Sipes"], ["password_digest", "$2a$10$pRa6l.mUAufmoIHInsbU6u3Uj0ddSZqWXsFDz4xgPKYaUId1D/oee"], ["remember_token", "TyJWeQT83oxMFUICj9xrWg"], ["updated_at", Mon, 24 Sep 2012 22:24:03 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-17@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:04 UTC +00:00], ["email", "example-17@railstutorial.org"], ["name", "Dr. Harrison Considine"], ["password_digest", "$2a$10$zBxME15XUZeoGXsfmYFj8edtMS7lQpCxBnqs8pSi6ZFPsn4e2vi2e"], ["remember_token", "MiCToUwYSqtmrwFWlY39Eg"], ["updated_at", Mon, 24 Sep 2012 22:24:04 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-18@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:04 UTC +00:00], ["email", "example-18@railstutorial.org"], ["name", "Bo Boyer III"], ["password_digest", "$2a$10$irA8qOqHdHL9ePu1XsrC6eLyyF/mk2W.CgKOlXPiknpBW7rA2mOke"], ["remember_token", "QX5-2wdsorJ5ThmWe4-uyg"], ["updated_at", Mon, 24 Sep 2012 22:24:04 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-19@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00], ["email", "example-19@railstutorial.org"], ["name", "Brielle Tremblay III"], ["password_digest", "$2a$10$icrlhGuEvhw4Wx7Ncjo9peGA9KrGCX5/JW6CWIPcDLI.A5dEAW3VW"], ["remember_token", "VsJy978AkTATZAmwo6PG1g"], ["updated_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-20@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00], ["email", "example-20@railstutorial.org"], ["name", "Rick Hudson"], ["password_digest", "$2a$10$x8pRYf3gXwDjv/zs.2QUieGhOK9L1r2AK4hJvpC3rGfWTnlKjC1lC"], ["remember_token", "NTUtSrV6dZvjoHVoItmAsw"], ["updated_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-21@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00], ["email", "example-21@railstutorial.org"], ["name", "Fae Legros"], ["password_digest", "$2a$10$FQUNP1PXj2GItMcaBU2db..ykqXd.JOp8vB9PTPEpEdcvi0Hbm5SW"], ["remember_token", "k7Z7nTtOn3pXTLPc1ypT4A"], ["updated_at", Mon, 24 Sep 2012 22:24:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-22@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:06 UTC +00:00], ["email", "example-22@railstutorial.org"], ["name", "Janet Stiedemann"], ["password_digest", "$2a$10$wtuUFNAv.q1d/2ETmBzsK.E8xiokWgZcsAoyC7G56qIpJv12zkCQ."], ["remember_token", "lZCwKEKp3CBx-TY7ztfagw"], ["updated_at", Mon, 24 Sep 2012 22:24:06 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-23@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:06 UTC +00:00], ["email", "example-23@railstutorial.org"], ["name", "Calista Rice III"], ["password_digest", "$2a$10$EmOZUI4MDwbzi5eVe4z/FONmg4Y1i1XTXlB4bc1Pjo6Dau07CvC9e"], ["remember_token", "hLuqKkeXapFEsVbWivKO_w"], ["updated_at", Mon, 24 Sep 2012 22:24:06 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-24@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:07 UTC +00:00], ["email", "example-24@railstutorial.org"], ["name", "Ms. Dorcas Abernathy"], ["password_digest", "$2a$10$z46fC0bS9P3g0IYms9QkLOkFhF2cMAnlBJVY7hCAf9nAVtVXpVv5."], ["remember_token", "VvZN9DNykBpTR7_YnFQTSQ"], ["updated_at", Mon, 24 Sep 2012 22:24:07 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-25@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:07 UTC +00:00], ["email", "example-25@railstutorial.org"], ["name", "Ernestine Nitzsche"], ["password_digest", "$2a$10$bO05nSv34fS7jXXaGTetNOspoJDP3idLck9E1aUUS88WKhetZlvOC"], ["remember_token", "wEOssGxXau5qu9wmLDMUQQ"], ["updated_at", Mon, 24 Sep 2012 22:24:07 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-26@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00], ["email", "example-26@railstutorial.org"], ["name", "Johnnie Stanton PhD"], ["password_digest", "$2a$10$R2N7A6hLm3P03.8cO/Q8eukccNCCLSvGZxKVK3XaMNyl7IcJo3TXW"], ["remember_token", "OiSAzRKlJGN5i-iSamwTWA"], ["updated_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-27@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00], ["email", "example-27@railstutorial.org"], ["name", "Jimmie Bogisich"], ["password_digest", "$2a$10$zLYl5h8u.uR7ppjiK3ksUu.dV.HXPqnePjqnT.Thz1ZEUogEcU232"], ["remember_token", "FAsvdiAq64l9GgrvqZi_Iw"], ["updated_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-28@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00], ["email", "example-28@railstutorial.org"], ["name", "Gussie Baumbach"], ["password_digest", "$2a$10$rO4YyerWzRtHpScTNL4gGOxZLsiJo8QfvKhkka1KqpDYbYKIYucKy"], ["remember_token", "ZV3T51oEdKrv23OCQ3sHAQ"], ["updated_at", Mon, 24 Sep 2012 22:24:08 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-29@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:09 UTC +00:00], ["email", "example-29@railstutorial.org"], ["name", "Jonathan Farrell"], ["password_digest", "$2a$10$6.hP8.LGo13GdPurV4yMNORitYMq2RaaezzlVV7ZCe9Crg3/VD1Fu"], ["remember_token", "MOCcYRZlBI4_KwFi6SSUjg"], ["updated_at", Mon, 24 Sep 2012 22:24:09 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-30@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00], ["email", "example-30@railstutorial.org"], ["name", "Summer Muller"], ["password_digest", "$2a$10$mVtsQ8RxLLm6SstIVnww9OZUMXAcOH.LPMMd2.uz4r2.lzemQhy8."], ["remember_token", "OInAK1M8MmMTauZy-yzflQ"], ["updated_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-31@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00], ["email", "example-31@railstutorial.org"], ["name", "Lavina Jerde"], ["password_digest", "$2a$10$0xVrAyH7TjCvvoNerWS7V.KWq7ua/CGzSY8x6siXlMWPvX0Rg.07C"], ["remember_token", "B-oxDDK8iwtvm1qQxOybeg"], ["updated_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-32@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00], ["email", "example-32@railstutorial.org"], ["name", "Landen Ward"], ["password_digest", "$2a$10$sn5KG.gQUaYcgNxlGfpGdOrdK9OB83n9rhcIduzp7kRTm5bkWIui2"], ["remember_token", "juB6u_FDjQHhIOkrA8Sv9Q"], ["updated_at", Mon, 24 Sep 2012 22:24:10 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-33@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:11 UTC +00:00], ["email", "example-33@railstutorial.org"], ["name", "Adrain Kassulke"], ["password_digest", "$2a$10$X1reSRaWEMBj6t0l9JK.EOGzE0mBAePxb8jY4P9o2ImiQgspmBUP."], ["remember_token", "T02P2pmytpXZKmyJqbku_w"], ["updated_at", Mon, 24 Sep 2012 22:24:11 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-34@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:11 UTC +00:00], ["email", "example-34@railstutorial.org"], ["name", "Sheldon Wisozk"], ["password_digest", "$2a$10$H1JTX3bs13hxwp244JfMl.uoN0Pv1THA649vKQve0jkUP//UVmc6q"], ["remember_token", "LpMWDeTq4MYNht8eR59Ofw"], ["updated_at", Mon, 24 Sep 2012 22:24:11 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-35@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:12 UTC +00:00], ["email", "example-35@railstutorial.org"], ["name", "Mohamed Streich"], ["password_digest", "$2a$10$d3Y4TgwVWdYn/HuZRFPN1.rL0r4H/9JTA7r3pE3BjIMehqEwpunc2"], ["remember_token", "JKYgyp0W7XBpE4fBg132aA"], ["updated_at", Mon, 24 Sep 2012 22:24:12 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-36@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:12 UTC +00:00], ["email", "example-36@railstutorial.org"], ["name", "Payton Bashirian II"], ["password_digest", "$2a$10$8ETKiZbT8cTRZlEUjaS5y.kjfvwsKzMNs.2pOfxy7eOf1Q0VXOoqS"], ["remember_token", "OYyp9qcKBzWMaP1Ez9kCwQ"], ["updated_at", Mon, 24 Sep 2012 22:24:12 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-37@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:13 UTC +00:00], ["email", "example-37@railstutorial.org"], ["name", "Unique Lang"], ["password_digest", "$2a$10$uXGSYkk.pgSYt.cTnrObrO7ncR6cUK8rDOtPZS91RIcEM50PZHNWK"], ["remember_token", "rhFBkpVRDgByHOeW76OF7w"], ["updated_at", Mon, 24 Sep 2012 22:24:13 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-38@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:13 UTC +00:00], ["email", "example-38@railstutorial.org"], ["name", "Alba West"], ["password_digest", "$2a$10$Dzyl1kc..3ACGeHrhKWwauc1tTbnIHTfmoRA1D4.bKBgI./r22gEO"], ["remember_token", "y5GTWpGPiik84Zw8JXhzkQ"], ["updated_at", Mon, 24 Sep 2012 22:24:13 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-39@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00], ["email", "example-39@railstutorial.org"], ["name", "Gay Hand"], ["password_digest", "$2a$10$CD.Z4dpaZfuCG7kmyGzfOudPPrXeE.MMIPb2CzgDsNW5QyuzBAFca"], ["remember_token", "y_PixsLyImPEv_d8btmKnA"], ["updated_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-40@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00], ["email", "example-40@railstutorial.org"], ["name", "Alan Thompson"], ["password_digest", "$2a$10$P./hXQ.G8BpIZYp/eT9iKe3Qg/Ces7g1dZf/TOO54AcXO/MWkUf46"], ["remember_token", "cpY30pflbPT11oGpVzRhRA"], ["updated_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-41@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00], ["email", "example-41@railstutorial.org"], ["name", "Mr. Donavon Walsh"], ["password_digest", "$2a$10$HT.jchvGulfbteD.0Hraze4tvKPz47RCE2fdnLBKX4R5KD5zNtS0G"], ["remember_token", "Mf-OZwSW0tS79uzpXmIqcA"], ["updated_at", Mon, 24 Sep 2012 22:24:14 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-42@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:15 UTC +00:00], ["email", "example-42@railstutorial.org"], ["name", "Kim Ankunding"], ["password_digest", "$2a$10$QHrlf1fpIFC0sflVRedhEOIFFKBQSaaf8t4fJPrR63RraxBuMQ5Qq"], ["remember_token", "ltibiiMFI61ilyZsMVCpXw"], ["updated_at", Mon, 24 Sep 2012 22:24:15 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-43@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:15 UTC +00:00], ["email", "example-43@railstutorial.org"], ["name", "Ms. Johathan Price"], ["password_digest", "$2a$10$az5H8/qW7UP7p56ji1JMZu.sqWA3wMLiUFawEBNkjQJjUdcY30pfu"], ["remember_token", "KNXu4mcDGogg5tZANofPUQ"], ["updated_at", Mon, 24 Sep 2012 22:24:15 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-44@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00], ["email", "example-44@railstutorial.org"], ["name", "Alva Becker"], ["password_digest", "$2a$10$36.J3mQL68K1bba7pnnpLeI/BptifRemb4TBYQ9X.x62G5nso/nOy"], ["remember_token", "cIzpGdjhz4ugnKyLYvPUbA"], ["updated_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-45@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00], ["email", "example-45@railstutorial.org"], ["name", "Quinton Bednar"], ["password_digest", "$2a$10$qub4w8g9uQ47hg/0SOjl1O11f8RvbiXqDZBN6sjoI6wvobByLPaCG"], ["remember_token", "w5jevg66MmxJr9J0cqaMdQ"], ["updated_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-46@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00], ["email", "example-46@railstutorial.org"], ["name", "Dr. Dortha Franecki"], ["password_digest", "$2a$10$6bMqQzTE24rPf/PuvZQlIucgXihSZ0WxnE12Z7KlKHKqYnfbMSKga"], ["remember_token", "VFnmNX9dTj1jqBzPmKnsTw"], ["updated_at", Mon, 24 Sep 2012 22:24:16 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-47@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:17 UTC +00:00], ["email", "example-47@railstutorial.org"], ["name", "Dillon Rowe"], ["password_digest", "$2a$10$el/P8COw8FiCYqRAnQyq5uMgKYlJtPUWJ3jx5UblVgcF6Hp8cxan."], ["remember_token", "tbCbxC61gemQnk1vQYjGsg"], ["updated_at", Mon, 24 Sep 2012 22:24:17 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-48@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:17 UTC +00:00], ["email", "example-48@railstutorial.org"], ["name", "Dora Grant"], ["password_digest", "$2a$10$64aUU9AUWoVxcQkuj9aqNeSbNVAXYTiUBxXa/ci5/gG78shwAcZD6"], ["remember_token", "MGxBL2pPRT4r0s-Ms2L1Vw"], ["updated_at", Mon, 24 Sep 2012 22:24:17 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-49@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:18 UTC +00:00], ["email", "example-49@railstutorial.org"], ["name", "Marielle Kerluke"], ["password_digest", "$2a$10$T6Pw14nqwHx.J.kziNaOsuII2oXFx.Xhn/BAlAl6Qhnkhvhmos/dm"], ["remember_token", "yzg4pAEYZ9eXP1Gg6sAktA"], ["updated_at", Mon, 24 Sep 2012 22:24:18 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-50@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:18 UTC +00:00], ["email", "example-50@railstutorial.org"], ["name", "Dr. Chauncey Smitham"], ["password_digest", "$2a$10$4nwdXQObWDAcdv.XO0uvZ.KtSR.MxQokLXB64Rf/NDvxgKGMScgmS"], ["remember_token", "EqjQElcnHAj2_6x5_oHifw"], ["updated_at", Mon, 24 Sep 2012 22:24:18 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-51@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:19 UTC +00:00], ["email", "example-51@railstutorial.org"], ["name", "Kennedi Runolfsson Jr."], ["password_digest", "$2a$10$OlJfsUZrLv5/fOqKgU92ne9pv9hNIGFmrVrREVO/H3hN9YT1QVgSG"], ["remember_token", "ZgWppCYkLOpLVLtM6W5Xeg"], ["updated_at", Mon, 24 Sep 2012 22:24:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-52@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:19 UTC +00:00], ["email", "example-52@railstutorial.org"], ["name", "Amelia Lakin"], ["password_digest", "$2a$10$MQtIL7rUH3C8hWo.sVkhzuIUy.48XaUlGaNFzM599SrFGyEpA8DP."], ["remember_token", "X9f8TenY4KgR1Vkcw6zlmA"], ["updated_at", Mon, 24 Sep 2012 22:24:19 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-53@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:20 UTC +00:00], ["email", "example-53@railstutorial.org"], ["name", "Miss Otis Cremin"], ["password_digest", "$2a$10$TfBZuSYiODStJvQDv18xOupMkmsNbjyd/8JK03IqsAtKzNbKYzmJO"], ["remember_token", "C2mBPkM_LODY4RqSXWJO1g"], ["updated_at", Mon, 24 Sep 2012 22:24:20 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-54@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:20 UTC +00:00], ["email", "example-54@railstutorial.org"], ["name", "Melba Hammes DDS"], ["password_digest", "$2a$10$wofrEIBHeTcKEEMBPTqWLexZPhpRQwXIkXRZcamD1qt8WrWTRi7Rm"], ["remember_token", "ZiOr0mqPKI0SFe7FA6cuZQ"], ["updated_at", Mon, 24 Sep 2012 22:24:20 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-55@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00], ["email", "example-55@railstutorial.org"], ["name", "Aurelio Langworth"], ["password_digest", "$2a$10$3hvjmu4es9R3.H/v6GhlteE9O0XVVl5q7FQV6waPism1gWWjpkVfm"], ["remember_token", "mG0xgrmItb_Ov6btwi_BtQ"], ["updated_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-56@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00], ["email", "example-56@railstutorial.org"], ["name", "Antonia Thompson"], ["password_digest", "$2a$10$XH5VFTMJ3Mm0QyCGOC7Ui.SgwXIBaRmEDGiaY/Cw5GN73Kyxeu8Bm"], ["remember_token", "4YKoedD4NJ0b2Ew88bCo1g"], ["updated_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-57@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00], ["email", "example-57@railstutorial.org"], ["name", "Julien Ebert"], ["password_digest", "$2a$10$s0rEmTozbgtkP1Zk/wLg7etXNnepWZOMzVaxV.8qRtq0L97CycI0y"], ["remember_token", "rFpABW-7OTnriZWmkZAqgw"], ["updated_at", Mon, 24 Sep 2012 22:24:21 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-58@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:22 UTC +00:00], ["email", "example-58@railstutorial.org"], ["name", "Mr. Joelle Koelpin"], ["password_digest", "$2a$10$5VMgeX9JDQCaA6rApKpt1.ROdXvN2w0VkLBEjJDtgNLiJp0.t2AlK"], ["remember_token", "YZgsX930ntgHRMF97_7DTQ"], ["updated_at", Mon, 24 Sep 2012 22:24:22 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-59@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:22 UTC +00:00], ["email", "example-59@railstutorial.org"], ["name", "Gertrude Barrows"], ["password_digest", "$2a$10$JZui2kDavht7NB1SFFAtU.SYoG.LgYkgYPjl/Bmg1oBEvNwFkYGzW"], ["remember_token", "XPxs_Cm1g8WW5aX_98pl_w"], ["updated_at", Mon, 24 Sep 2012 22:24:22 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-60@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:23 UTC +00:00], ["email", "example-60@railstutorial.org"], ["name", "Nakia Kuphal DVM"], ["password_digest", "$2a$10$6Qu2X2qYDd564hs6MraSMOQReqTw2H4G3NOlp8QgBHCo3IsqMXNWm"], ["remember_token", "iEzLXfwz7U0Fhc6BBqjOlw"], ["updated_at", Mon, 24 Sep 2012 22:24:23 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-61@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:23 UTC +00:00], ["email", "example-61@railstutorial.org"], ["name", "Maurine Herzog PhD"], ["password_digest", "$2a$10$vyKPihNAQkpuhexdMS9SfeBwjLANf6bMOhfe7sVDg6ibz4rmKEQ2K"], ["remember_token", "Nfs9G73Ml4LJNID-qtCeqw"], ["updated_at", Mon, 24 Sep 2012 22:24:23 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-62@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:24 UTC +00:00], ["email", "example-62@railstutorial.org"], ["name", "Gustave Swift"], ["password_digest", "$2a$10$oqWHSmHeZAQNH2p1oR3u6.vbasiwYaXXQsfYW57XXfErBxeF7/AMm"], ["remember_token", "eAR5FVAm6oNq5EEturc4EQ"], ["updated_at", Mon, 24 Sep 2012 22:24:24 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-63@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:24 UTC +00:00], ["email", "example-63@railstutorial.org"], ["name", "Christine Balistreri"], ["password_digest", "$2a$10$05e11Og8R5lof8B0cbTGnOuuQtb23WqNoSMSoEik7HACsXowPjVWW"], ["remember_token", "tAoZyV7KYbw0cekwuUkE2A"], ["updated_at", Mon, 24 Sep 2012 22:24:24 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-64@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00], ["email", "example-64@railstutorial.org"], ["name", "Malika Rau"], ["password_digest", "$2a$10$eslbJ7sFZ.kvzPwqW2scUuTLc8ThfuyiDBaU/u71qHD7mm8W5T/f2"], ["remember_token", "ZvU2b4CxUxwpDERKoniRMQ"], ["updated_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-65@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00], ["email", "example-65@railstutorial.org"], ["name", "Ms. Marisa Langosh"], ["password_digest", "$2a$10$4.yivoCxRZs49aZdQBfZz.LTv2lPRWSaYqV4dsdiqgrM/eh/W69Ri"], ["remember_token", "v7qdeEX2_jmnzflq-A7a6g"], ["updated_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-66@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00], ["email", "example-66@railstutorial.org"], ["name", "Dan Abernathy"], ["password_digest", "$2a$10$YsDtemXjY7RPdtFZaw8IGeALrHcI87LIk6mOuuAJ6mvjpGju3koo2"], ["remember_token", "Y3PNao0w6_lKHogK0I4pLA"], ["updated_at", Mon, 24 Sep 2012 22:24:25 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-67@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:26 UTC +00:00], ["email", "example-67@railstutorial.org"], ["name", "Ole Carroll"], ["password_digest", "$2a$10$6JgyA1WY5u4YGwo.eg3WFOZhC26JUYgXkkcnojLU1PndJazW/8pLW"], ["remember_token", "ZPqbjs8GmaxvymsJd4HypQ"], ["updated_at", Mon, 24 Sep 2012 22:24:26 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-68@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:26 UTC +00:00], ["email", "example-68@railstutorial.org"], ["name", "Osvaldo Kuvalis MD"], ["password_digest", "$2a$10$RQeEiy9LRTPo0t6M74XAQ.1.20LE34698FSuyTEUpF0G48m9TKEd."], ["remember_token", "6C2OOsANa024DgVs7EK4Mw"], ["updated_at", Mon, 24 Sep 2012 22:24:26 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-69@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:27 UTC +00:00], ["email", "example-69@railstutorial.org"], ["name", "Camila Goldner III"], ["password_digest", "$2a$10$/2cJBpwhsUIpxGoLk6QAYuEzS8gbrN8J5dgSIzlnaz..N.wp20Zd6"], ["remember_token", "coBBvfB7yFSyHUA5ljWNEA"], ["updated_at", Mon, 24 Sep 2012 22:24:27 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-70@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00], ["email", "example-70@railstutorial.org"], ["name", "Johanna Lubowitz"], ["password_digest", "$2a$10$LxMsvCGkAXVkyIIkFoU.pe.sCoDryP4pZMBqOumaX8Z/OQESm7gnq"], ["remember_token", "aEOMQMv1w8s8nnAhCg5UPQ"], ["updated_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-71@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00], ["email", "example-71@railstutorial.org"], ["name", "Carson Parker"], ["password_digest", "$2a$10$8az6eR/XeffQBswZPgWRSeXvPS1SdBkJK5L..OFDHeJD3mx6SShpC"], ["remember_token", "wPmhNoU1v8oKPipDBO2FRA"], ["updated_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-72@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00], ["email", "example-72@railstutorial.org"], ["name", "Jaeden Schultz"], ["password_digest", "$2a$10$50yfdUzptR4DnxmjO2eiqeb9/ouvVP4sBdckLF7iFOgFBgKu9MD0O"], ["remember_token", "TN_rq-ZMmpMxDRygyS0P2w"], ["updated_at", Mon, 24 Sep 2012 22:24:28 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-73@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:29 UTC +00:00], ["email", "example-73@railstutorial.org"], ["name", "Dr. Arlene Von"], ["password_digest", "$2a$10$dCSBSPH0ULEc1csRXDehC.6rQu6FdpN0mNQcWxpjvNtY7C8kB5BnW"], ["remember_token", "x2XUk53gx1OQOktX8-jh1A"], ["updated_at", Mon, 24 Sep 2012 22:24:29 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-74@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:29 UTC +00:00], ["email", "example-74@railstutorial.org"], ["name", "Carrie Gutmann"], ["password_digest", "$2a$10$rBY267IxcTebwDJBbkr.f..ACsBJzBtDyvQumTXtyXpQxQr6R3tUm"], ["remember_token", "eUUSlLt9tXyxRTeZi795rA"], ["updated_at", Mon, 24 Sep 2012 22:24:29 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-75@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:30 UTC +00:00], ["email", "example-75@railstutorial.org"], ["name", "Desmond Davis"], ["password_digest", "$2a$10$4GW2gXMhpHHAgieW7jmQWehkJoN8bM5JLH./DmiEsMBVmm7ZRrD8O"], ["remember_token", "xpx0dIIW1kSOVl6yNaAK4w"], ["updated_at", Mon, 24 Sep 2012 22:24:30 UTC +00:00]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-76@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:30 UTC +00:00], ["email", "example-76@railstutorial.org"], ["name", "Bert Cronin"], ["password_digest", "$2a$10$HAGp5FR2GdfnQ2I9uVxoFO7jDVlQdWr8DcAlupCwVaw8b6wkGUSre"], ["remember_token", "hOssNw05KL0P22mwDxkLLA"], ["updated_at", Mon, 24 Sep 2012 22:24:30 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-77@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:31 UTC +00:00], ["email", "example-77@railstutorial.org"], ["name", "Emily Dickinson"], ["password_digest", "$2a$10$X151wH.VnGDLcho8BAPteuMvfbDtA45cOIoJ.WC6d31Ciu1F6buCG"], ["remember_token", "uYXwz7GFS4FfvWADyKlOjQ"], ["updated_at", Mon, 24 Sep 2012 22:24:31 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-78@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:31 UTC +00:00], ["email", "example-78@railstutorial.org"], ["name", "Angelina Cartwright"], ["password_digest", "$2a$10$KNdqvhEiacod7YDV1CfugOx0f7RJnjK2qDgTA9LukiE4rVUKBq4Xm"], ["remember_token", "GhGczpoT61cpvzh4ilRFHw"], ["updated_at", Mon, 24 Sep 2012 22:24:31 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-79@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00], ["email", "example-79@railstutorial.org"], ["name", "Daisha Barrows V"], ["password_digest", "$2a$10$EpxtXwNNb2Uw2df4pdiPW.oeyNAxH/FN3RmVxonK3N1PPoo0n76qu"], ["remember_token", "1g_beuNqprZpY_ajlf7_sA"], ["updated_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-80@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00], ["email", "example-80@railstutorial.org"], ["name", "Felicity Wehner"], ["password_digest", "$2a$10$jUMW6xu.2WpWVSpbshMuN.FHz7zeSE1bfO2yK3eDCclGEH2h1VTYa"], ["remember_token", "qbvA4aIKuU3vvVXVZGl3cg"], ["updated_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-81@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00], ["email", "example-81@railstutorial.org"], ["name", "Devin Jewess II"], ["password_digest", "$2a$10$8EdGXLcAxmXjJp.tMykfxe/XNAaJJVtuoA.n.QP6k1Vh5JvuqUaSC"], ["remember_token", "6eWBOqvs-zsdSja8SpAe1A"], ["updated_at", Mon, 24 Sep 2012 22:24:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-82@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:33 UTC +00:00], ["email", "example-82@railstutorial.org"], ["name", "Miss Arianna Nitzsche"], ["password_digest", "$2a$10$U2xCl0H2PGKh0OYI0VShi.kKh.k7dDvm/.zVI7bC.mY8AyuigBNoa"], ["remember_token", "5g5Scdf81Qc8ZOW9VLQToA"], ["updated_at", Mon, 24 Sep 2012 22:24:33 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-83@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:33 UTC +00:00], ["email", "example-83@railstutorial.org"], ["name", "Mariah Osinski"], ["password_digest", "$2a$10$wsIFAXyOH.n1ddDmdDI25OTGFYFE.fcbAJ29XORcFUb8Ue8TtdAHa"], ["remember_token", "0MRzwylGCipTGGUHl110Iw"], ["updated_at", Mon, 24 Sep 2012 22:24:33 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (5.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-84@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:34 UTC +00:00], ["email", "example-84@railstutorial.org"], ["name", "Trevion Goodwin"], ["password_digest", "$2a$10$b0yaSYFG6QUVI5IXufhyQ.uuVpXdHTMxBOoXDfziS0AArRGP.pIaG"], ["remember_token", "B43XBeMA9fnvcZTPZlesYg"], ["updated_at", Mon, 24 Sep 2012 22:24:34 UTC +00:00]]
+  [1m[35m (24.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-85@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:34 UTC +00:00], ["email", "example-85@railstutorial.org"], ["name", "Miss Joey Zboncak"], ["password_digest", "$2a$10$u1tUvKQUwdmKaKPAPh7LFucCL7gdl4u1kqxCbiZiBLWlz7PrvScbi"], ["remember_token", "wMOCICIG0sUYZoMUzLo7pg"], ["updated_at", Mon, 24 Sep 2012 22:24:34 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-86@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00], ["email", "example-86@railstutorial.org"], ["name", "Orrin Gislason PhD"], ["password_digest", "$2a$10$rDTcXH/UHZ2C9k4kfSqGJOG1VH0okibCdUV8XUPmCdbDLoJC2V7H6"], ["remember_token", "QQ9c8K8Si_bscGVaHnMQ0A"], ["updated_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-87@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00], ["email", "example-87@railstutorial.org"], ["name", "Mrs. Marjolaine Fisher"], ["password_digest", "$2a$10$gHRHa.geb1ZHyEhAdc5NueLD22gm1wylbTcrLaQCxH74eA4EUyLeK"], ["remember_token", "R731lECsuRGLipQq_LJwTw"], ["updated_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-88@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00], ["email", "example-88@railstutorial.org"], ["name", "Ella Johnson"], ["password_digest", "$2a$10$Z0BCzaZxHijFXSQLCRlTAeVUdF1lKd.XCz/BDnSg.z8VXRD1rojb6"], ["remember_token", "-RtC5ZdwM7Gw0DsAu-1e4A"], ["updated_at", Mon, 24 Sep 2012 22:24:35 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-89@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:36 UTC +00:00], ["email", "example-89@railstutorial.org"], ["name", "Mr. Arvid McCullough"], ["password_digest", "$2a$10$kq6rAwHQwi2XaQ1BolazhO16KRJgkDXOj0uY5A3Bo1HhtLBC/bmFK"], ["remember_token", "mkhngV_e_Sna4hd0rQ1WPA"], ["updated_at", Mon, 24 Sep 2012 22:24:36 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-90@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:36 UTC +00:00], ["email", "example-90@railstutorial.org"], ["name", "Miss Adrien Berge"], ["password_digest", "$2a$10$7axFXHhhvKTu2BfIv3F8tOqhyunBYsGRbNTVkUlj3WuJ22dPe6XNq"], ["remember_token", "T_41qeFd7okzYeqoaa_9lA"], ["updated_at", Mon, 24 Sep 2012 22:24:36 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-91@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00], ["email", "example-91@railstutorial.org"], ["name", "Jared Welch"], ["password_digest", "$2a$10$n9dgb8DoCFe9AMqLTDDF9.3zrCiqhjHOhV5f5a1gl4mk9/cr5zsQm"], ["remember_token", "SbonDn8h1xMYNJ10YB75SA"], ["updated_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-92@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00], ["email", "example-92@railstutorial.org"], ["name", "Mr. Pasquale Gottlieb"], ["password_digest", "$2a$10$w.yfk.iSAIwzV.KUGoXHFeBLBX6V.vYFhYAAegH3zHRuDDZnVDbty"], ["remember_token", "P2kibBQGFgW1sfxYmOf5Ag"], ["updated_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-93@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00], ["email", "example-93@railstutorial.org"], ["name", "Ms. Cleora Kulas"], ["password_digest", "$2a$10$tgbbRlilI4APV9W6L21mTeOfbPFEVxZ65NVm0kmy0ov.qN6NQdZCO"], ["remember_token", "3Tnzhsv9Ze-gQCuM0eGH6g"], ["updated_at", Mon, 24 Sep 2012 22:24:37 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-94@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:38 UTC +00:00], ["email", "example-94@railstutorial.org"], ["name", "Miss Clemmie Schiller"], ["password_digest", "$2a$10$.Bsc.X9nE86A/TozTUthnOn/buGJx0FMzrc1JrYESI1nRBnkJ.EJO"], ["remember_token", "4o2Xiyvh8lvYgO3nIHUXbg"], ["updated_at", Mon, 24 Sep 2012 22:24:38 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-95@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:38 UTC +00:00], ["email", "example-95@railstutorial.org"], ["name", "German Baumbach Jr."], ["password_digest", "$2a$10$QgZ9YfrsnSpPRKRGVCJ9KeCEwiCewDGcQW4BMn1NvUEej4lDiimI6"], ["remember_token", "GFGj-tH0zEhEmEaKFIbJNw"], ["updated_at", Mon, 24 Sep 2012 22:24:38 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-96@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:39 UTC +00:00], ["email", "example-96@railstutorial.org"], ["name", "Ms. Karina Brekke"], ["password_digest", "$2a$10$WWoKbzXi6fyADtGo8pmjJOipEcZk1n/mPFtB2vu1q0aWrnEzvRPoS"], ["remember_token", "9X6nTi2rAXbWCUZFAsLV9Q"], ["updated_at", Mon, 24 Sep 2012 22:24:39 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-97@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:39 UTC +00:00], ["email", "example-97@railstutorial.org"], ["name", "Vernice Deckow"], ["password_digest", "$2a$10$hIcjHDUl.QYwiNqXufRsKuvBSxSJG.u5K/7po5tiypbCEPduuhA32"], ["remember_token", "pU1lydKtBv9DCB9c004ifA"], ["updated_at", Mon, 24 Sep 2012 22:24:39 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-98@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:40 UTC +00:00], ["email", "example-98@railstutorial.org"], ["name", "Dovie Stroman"], ["password_digest", "$2a$10$dI5HLFMqWhawgXGGPLH/hu4qnYYSF8XLx9z/96FSHrjT9kpJh5yw6"], ["remember_token", "OdILPZqbB1qqThn_C7fOhg"], ["updated_at", Mon, 24 Sep 2012 22:24:40 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example-99@railstutorial.org') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Sep 2012 22:24:40 UTC +00:00], ["email", "example-99@railstutorial.org"], ["name", "Amari Renner"], ["password_digest", "$2a$10$EifKisOBTUK2Aw6BG1ffje.gzIFdsrp2Gxv70K9l1qH/0V.K9dagq"], ["remember_token", "DZ7KqGNBlWE-k5SuIwcW6w"], ["updated_at", Mon, 24 Sep 2012 22:24:40 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "remember_token" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35m (1.1ms)[0m  CREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921215130')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921160120')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120921165333')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120921173500')
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2012-09-24 18:27:26 -0400
+Connecting to database specified by database.yml
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '633oF4PI0RV8AHABgG1CBQ' LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as :signed_in_user rendered or redirected
+Completed 302 Found in 99ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-24 18:27:27 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (392.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '633oF4PI0RV8AHABgG1CBQ' LIMIT 1
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 657ms (Views: 655.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /static_pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /user.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:28 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-24 18:27:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltxOLjvzu9SScJA+o+xi8iui4X8CWNiCj0JCo6ceIyg=", "session"=>{"email"=>"paulhhoover@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'paulhhoover@hotmail.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '633oF4PI0RV8AHABgG1CBQ' LIMIT 1
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:36 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:36 -0400
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /bootstrap.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:37 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-24 18:27:40 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '633oF4PI0RV8AHABgG1CBQ' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 88ms (Views: 72.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap.js - 304 Not Modified (76ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:41 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 18:27:52 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltxOLjvzu9SScJA+o+xi8iui4X8CWNiCj0JCo6ceIyg=", "user"=>{"name"=>"paul.hoover", "email"=>"paulhhoover@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('paulhhoover@hotmail.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '633oF4PI0RV8AHABgG1CBQ' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 495ms (Views: 50.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:27:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 18:28:02 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltxOLjvzu9SScJA+o+xi8iui4X8CWNiCj0JCo6ceIyg=", "user"=>{"name"=>"paul.hoover", "email"=>"paulhhoover@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('paulhhoover@hotmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 24 Sep 2012 22:28:03 UTC +00:00], ["email", "paulhhoover@hotmail.com"], ["name", "paul.hoover"], ["password_digest", "$2a$10$M65Da1bz9k8Wk2L9V8c/zej0e6IUuVRGshBUep//nKC2kMK1KUUom"], ["remember_token", "ZQpGDf8tchrQwrcYJF-0Xg"], ["updated_at", Mon, 24 Sep 2012 22:28:03 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/101
+Completed 302 Found in 418ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/users/101" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "101"]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ZQpGDf8tchrQwrcYJF-0Xg' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /application.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:03 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ltxOLjvzu9SScJA+o+xi8iui4X8CWNiCj0JCo6ceIyg="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-24 18:28:07 -0400
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-24 18:28:08 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 121ms (Views: 120.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /bootstrap.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:09 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-09-24 18:28:21 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltxOLjvzu9SScJA+o+xi8iui4X8CWNiCj0JCo6ceIyg=", "user"=>{"name"=>"paul.selectable", "email"=>"ph@selectablemedia.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('ph@selectablemedia.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Mon, 24 Sep 2012 22:28:21 UTC +00:00], ["email", "ph@selectablemedia.com"], ["name", "paul.selectable"], ["password_digest", "$2a$10$YU482A8hGCRtZXqEOqqbBO47qKQH8uXuJgp2rX69wKae9PkXfbsTy"], ["remember_token", "dFr4yVV_Cq1pjN2IDp9fdA"], ["updated_at", Mon, 24 Sep 2012 22:28:21 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 408ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2012-09-24 18:28:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "102"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'dFr4yVV_Cq1pjN2IDp9fdA' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'dFr4yVV_Cq1pjN2IDp9fdA' LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (62.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 116ms (Views: 104.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (56ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /bootstrap.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-09-24 18:28:25 -0400
+Served asset /user.js - 304 Not Modified (0ms)
