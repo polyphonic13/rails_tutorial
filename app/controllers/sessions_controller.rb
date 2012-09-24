@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    puts "----------------------------------- sessions controller, destroy method (signing out)"
     sign_out
     redirect_to root_url
   end
