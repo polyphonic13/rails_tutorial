@@ -3,15 +3,14 @@ class MicropostsController < ApplicationController
   before_filter :correct_user, only: :destroy
   
   def create
-    #puts "------------------- ATTEMPTING TO CREATE A MICROPOST WITH #{params[:micropost]}"
-    # @micropost = current_user.microposts.build(params[:micropost])
-    # if @micropost.save 
-    #   flash[:success] = "Micropost created!"
-    #   redirect_to root_url
-    # else
-    #   @feed_items = []
-    #   render 'static_pages/home'
-    # end
+    @micropost = current_user.microposts.build(params[:micropost])
+    if @micropost.save 
+      flash[:success] = "Micropost created!"
+      redirect_to root_url
+    else
+      @feed_items = []
+      render 'static_pages/home'
+    end
   end
   
   def destroy
@@ -21,7 +20,7 @@ class MicropostsController < ApplicationController
   
   private
   
-    def current_user
+    def correct_user
       @micropost = current_user.microposts.find_by_id(params[:id])
     rescue
       redirect_to root_url if @micropost.nil?
