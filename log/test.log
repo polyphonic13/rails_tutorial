@@ -1160,3 +1160,1308 @@ Processing by UsersController#show as HTML
   Rendered layouts/_footer.html.erb (0.7ms)
 Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.4ms)
   [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (75.3ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:37:33 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$WgrgCIqwtxcxk2Y3m.cBQuRqpE.q9Mg6pX4FmfIQ33svgFE.hpAeS"], ["remember_token", "hJ9qdh-KoFNbK5D9UjsQJw"], ["updated_at", Tue, 25 Sep 2012 15:37:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:37:33 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$TTK3VuiPFiOAxZruiN03Ie8QI3qHE1XS5BA.ZLPv4EBuGB0KmOoQC"], ["remember_token", "mCSNysKcFqUzX2ttIF2uFA"], ["updated_at", Tue, 25 Sep 2012 15:37:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$PDhRecXZ44D92nJ5VsER1eeGwoOR6VGOyKSdVs2zBlnnSCKW74JBC"], ["remember_token", "07aw5YT9JuatjTgRl8NT_A"], ["updated_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$BTG9Nsr1RjpjKO9U7BKR4ebT3XgZmzdnJRjmgbkb8X8OmTwkaF0MG"], ["remember_token", "6lHEh-lZ_oJVN1p8ePm2TQ"], ["updated_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$dAHRTB9ym8P/0Pn/vEKeMOkHch4glX5rZ6b2WTZcD7v82YyF/W.kW"], ["remember_token", "_0S0vJcPHPszdthWMhdIYg"], ["updated_at", Tue, 25 Sep 2012 15:56:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:08 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$hL5LOEreof4d7Ded2JWbqOWU74H4jeoJ2AKbSTpR8eLA9aVNJ/ncW"], ["remember_token", "pR30XUGdu7B3F4w56-06_w"], ["updated_at", Tue, 25 Sep 2012 15:56:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:08 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$ISALfSryea10DxQrmpMCrOR6zoDPeZrnoGZHtcjsDLGawmK6dVRGW"], ["remember_token", "8HSR4bN4Wx1eJF_Eg0tMNg"], ["updated_at", Tue, 25 Sep 2012 15:56:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:09 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$GF5XYJVL.DdaHavvM0bxYOk4HZ9t/9sFglADyexrbUlK.LQwOdOiq"], ["remember_token", "lvgYYJX8WRvcAb1siheG_Q"], ["updated_at", Tue, 25 Sep 2012 15:56:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:56:09 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$RveFiuuqfTvdGlHeeP9O6OrxvKfx0yOg0qAKyz19fsYJwRkFL2Zxa"], ["remember_token", "Zb9TC3tXkQf5nYuFwyqqQA"], ["updated_at", Tue, 25 Sep 2012 15:56:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:50 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$NrcmitnSo6NgRPRdFy3rVu3IhaLYNMgqP5LwgdBRLiWWND25CiZ/2"], ["remember_token", "oaqmk7lQW63VdVSUfE-0hg"], ["updated_at", Tue, 25 Sep 2012 15:59:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:50 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$bd.cZuLmX8DwmWq643eB6.kcwZrgVG1H1qZzCyfKRkv6PD2Pmdkcm"], ["remember_token", "6m-QmaVOIZEGbhTfBBfeVQ"], ["updated_at", Tue, 25 Sep 2012 15:59:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$EygT7wnOYeGXwQIuIr1OHeVFFVk4rW5rB/tFEsLNd7vJg69hmm3lC"], ["remember_token", "txR6Cv7CJbTNHqJFHl5TZg"], ["updated_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$wRsyUe5F6YA3/z9O9kc/Z.dMZZcQc0rPRnzZquVqJB62lguqyM4HK"], ["remember_token", "rV82pwbvhkQRVAtvVXgD-w"], ["updated_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$uQ/gVutYnRb3yo8riPtSD.s/HIa28gMo3Gur158I/bEghcfmNibR6"], ["remember_token", "JtkzewW2FCuO0vJqpRPrxw"], ["updated_at", Tue, 25 Sep 2012 15:59:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:52 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$6r6tKqZcinPcxsNYjbbE4u/JS.1qa4WwDKSXzKJPQJNSSHd82IRzi"], ["remember_token", "PSfhYUPU4UnJXcyXEY7L2A"], ["updated_at", Tue, 25 Sep 2012 15:59:52 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:53 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$f7RtgKUidyJoh5Y96aYazODb8KKxROll3M565uHCgPOksuU2.hxF6"], ["remember_token", "LwI3cFuTDet2tcT7hvA7IA"], ["updated_at", Tue, 25 Sep 2012 15:59:53 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:56 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$zE7DuZySW9c.3OWpriSEYO4Yvs2CAvrv0.H.CRKq0YXxecGhVVCii"], ["remember_token", "S4IM3B3qplzkhVULIQRVNA"], ["updated_at", Tue, 25 Sep 2012 15:59:56 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 15:59:58 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$Ebtpm5HGJ7Hmb.8AGfyvsOUc.3n6ZaW.qhOYGU4Pk8pBtsS01dLWe"], ["remember_token", "_S66M3o5bcFnrXvMEPyJ1Q"], ["updated_at", Tue, 25 Sep 2012 15:59:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (56.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:00 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$1E14XrCDoDfANGv43IpkZu3tlv7hQkNO4aK7tCYlnf96bP8iBRG6S"], ["remember_token", "eyhTczQwQnzZHveQxBhWBA"], ["updated_at", Tue, 25 Sep 2012 16:00:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:01 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$wRW8q49fj1nJE6VcXxMHneMoGGV3cVx3IiBDz7ttvZg.4OWIo/G2u"], ["remember_token", "jh-wqSjBtKpWajqBuAtCXQ"], ["updated_at", Tue, 25 Sep 2012 16:00:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:02 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$tMqpC.Xqe.XO9X6UqRS/fuYQyzLKnW3j3MxUsvfm.oZXp/PDQn3nq"], ["remember_token", "iZSfmb-Mubsj9EHwNJ5OJQ"], ["updated_at", Tue, 25 Sep 2012 16:00:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$TNlFuu/qCJ8eUFULA90NFeBtHucarUW2KbFsCC2ou16QqBm/wyTbi"], ["remember_token", "sBshBmD0jQkdZZqzLRRdsA"], ["updated_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$PiAV2YsS29d/FWy/ABDgo.TkPTtGdB4MVZHwRwMVEL0ubrxbk385e"], ["remember_token", "Wdn3nOoECcvw1wozhQuahA"], ["updated_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$6HsHy3HYPRapYSP5DQDL5ekH7CevaoZ.pz8Xs8/46bMzSKJTo6zAq"], ["remember_token", "c_c7ace7o7Icj-ZKIVN8WA"], ["updated_at", Tue, 25 Sep 2012 16:00:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:47 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$O8YIFUMzrb4P7YNzMLoMVOWOFvg2LJTTSqOjplIZcCxBhB/uRVSWG"], ["remember_token", "4MgmbxQ0jd3GELmbF95vGQ"], ["updated_at", Tue, 25 Sep 2012 16:00:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:47 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$o7lIfZvPKS/ZoEUP9ymwgOVTGy6qzhIz8J6AfAH8TmugC5sS63/gW"], ["remember_token", "5riZ_9fahBQBEgKOu2htoA"], ["updated_at", Tue, 25 Sep 2012 16:00:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:48 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$VeImOtW8jea20uR.yf401eP9aXunWXx7nfqC7wbvntFbtLdrul1G2"], ["remember_token", "DeoBlLs8ZAuilPX1EOoYmg"], ["updated_at", Tue, 25 Sep 2012 16:00:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:49 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$2fn0UpMnTfRf3iX3CSQeweu.myTb1svPW06RWek6vCshkPUb.WNr2"], ["remember_token", "4shCiIbt0OdKPTeIjg82LQ"], ["updated_at", Tue, 25 Sep 2012 16:00:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:53 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$zrfSh2.xUnejw0yCx9/5GOCxphaM2LzNsGlm1dZpJ/cMH6g/c7d4."], ["remember_token", "8c1s4rHTEz5zIjtp0wXuOQ"], ["updated_at", Tue, 25 Sep 2012 16:00:53 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:54 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$UCzm/zcqv5LArMP3a.586ebtATDt9.L2xEOctcSl4LIRUVqTUolR2"], ["remember_token", "Wn8rZTPxdmNnO_EPyiRwAQ"], ["updated_at", Tue, 25 Sep 2012 16:00:54 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:55 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$0f/mCqRkbxkRCh.EehTdJ.b.vjEyxM9miXJrMVNsLlODP6AJssPqy"], ["remember_token", "jAi38n5H_gxMVgJRd87uRQ"], ["updated_at", Tue, 25 Sep 2012 16:00:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:56 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$n5aH1q7MxKXpaE/gHWyz9ucvZ0/VEUbpXfr8IoC6TrFTjPZMypbSa"], ["remember_token", "PKYbVmgnbHbzENg2ZmL8Pg"], ["updated_at", Tue, 25 Sep 2012 16:00:56 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:00:59 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$KqJ2zs3knnT1ia4X0g.mNezWXRX3NOcHAlCb5FM4up4gDYRfWLunO"], ["remember_token", "gIna_1mvSAJssokivthpDQ"], ["updated_at", Tue, 25 Sep 2012 16:00:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:34 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$S1OjKaj39.OREXFCbVOMS.Mmic3SWdZZfiMx9M/UVKLoSH0GzghIO"], ["remember_token", "qj740iRCsFcKhasvjL_iig"], ["updated_at", Tue, 25 Sep 2012 16:14:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$lB0IxUUbh7WjCmm9Jo2YvORg/YHs2HRvYO9mTD1qThQ8X8Gy00hSO"], ["remember_token", "3yF2fRGth1Nupgp4yoimpw"], ["updated_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$M2Le0WGQSlb5rZhwZE4FNOfxaHL0hbh9hKMhr3rc83K3abgitN.gy"], ["remember_token", "h_o8dNk2AdGJOqnQxYwS0Q"], ["updated_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$QDjYNCAAhNToCUkycR2FPO9hNylUzYMW5PjsGbhYgezrjF0si7wbm"], ["remember_token", "iTjFAtbpdyG_84_P0InJuA"], ["updated_at", Tue, 25 Sep 2012 16:14:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:36 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$9M/pDsc.ftmVhGRYPahAgOmUmRtz.8/RwMaFcUGodkINJS0U3PvQy"], ["remember_token", "GFipdkmUTWqGlrJUHeHxRA"], ["updated_at", Tue, 25 Sep 2012 16:14:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:36 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$gC7CdmW1CYH6kq/o.wVQfu8tuM0ffUvPYJwGYx.Rm/FsgRXILhuky"], ["remember_token", "hkyZIRuH2e9k5srmfRRFcA"], ["updated_at", Tue, 25 Sep 2012 16:14:36 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:37 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$pl7048FGzrfAyHg8xQnWFulFvmaNUvVZ0hB45IXsGxIFcKktD.3PK"], ["remember_token", "yymJg1C1kvDeQWX_d9uzjw"], ["updated_at", Tue, 25 Sep 2012 16:14:37 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$AnuPj8iHaTBDk3Da8hM.cuhjA5nCJHv0jkWIdlduqab3gFLfiiDNi"], ["remember_token", "tEYi5A-N4ctPnPB1YRzDJA"], ["updated_at", Tue, 25 Sep 2012 16:14:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:42 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$dHzm27EDwHnol2hPG6df5ux3GnvqYG24z60eLUVheJHdgl1Tvsumy"], ["remember_token", "HUphcRejgJlmFymakPvhQw"], ["updated_at", Tue, 25 Sep 2012 16:14:42 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:43 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$GQ9jIQgwpbV5MSsC3tgHsOUIITwgp.jC1blZX./yUzXk6/syl2h1q"], ["remember_token", "QHw4ATLpVTQ6F60Rqobwjg"], ["updated_at", Tue, 25 Sep 2012 16:14:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:44 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$By2eT3VsQ.FnABczKQjs0e8eLhw6RtBSeU6s6XphVzlFmwg4zveTu"], ["remember_token", "pcDKpIWv5TDe0W97CUEVIg"], ["updated_at", Tue, 25 Sep 2012 16:14:44 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (3.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:45 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$sPF6HyixHxd8WRjq9xtAjOI4zwggdLJpD/9w9CnABtZiph9rgkI/q"], ["remember_token", "eJwkxjY-ZZrwiZavE0zAMA"], ["updated_at", Tue, 25 Sep 2012 16:14:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:14:45 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:14:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:14:45 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:14:45 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:14:47 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$V5gXapZBF2RmoVc8XQ6J5erpPNjWCaWCDWnOsb9OMb.V0WOBiLBU6"], ["remember_token", "5RnRsLKUCj7MQAqMVTMVtQ"], ["updated_at", Tue, 25 Sep 2012 16:14:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:31 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$rBRd5Qfq.SqzhUBzVmkvrejU1nTpGYZhAgNoW929AfllmWizbVhYS"], ["remember_token", "kCKwo1eL9xAvio5ysRuQpw"], ["updated_at", Tue, 25 Sep 2012 16:15:31 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$1FVMPxQJb4ey3iWNR2yOS.Y6pQTfhWUBE2RYHzu4BaUaEMC6TDRVy"], ["remember_token", "Cwibk_XhDB8vNV72y4AP8A"], ["updated_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$TzMdYtce9Y5B5nVZcXpXgub3NkRgq6yhgdp.m695rjuNc3YnH84aq"], ["remember_token", "TjcUtc9_CF5YPfjmzzAWMw"], ["updated_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$6G5C.56jNf1.o1d3SSGJJuybrkVYPe0.yn7nXvP15oxBLVk0./RcW"], ["remember_token", "m6IXx4popM3nI4Qb7deqjQ"], ["updated_at", Tue, 25 Sep 2012 16:15:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:33 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$cI0MO0kyeUf9M.mJNU.TNO/3OHG/TSAaiFS4cF47H.rwt/iUREwf6"], ["remember_token", "_OwEPzi2JJqiLIvrfxyopQ"], ["updated_at", Tue, 25 Sep 2012 16:15:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:33 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$6XjiV/OcuRilgpyMTD7fAecja7aP4UNRF.B2NeujzWbdgeTotjHRW"], ["remember_token", "PEqzs9od6AO_49ZxIq3kuA"], ["updated_at", Tue, 25 Sep 2012 16:15:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:34 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$wJDs8it5Gqw4ZBuwRo0Ca.2MsDDPpP7H0WTqSiu9QIVRKIAqVwk7C"], ["remember_token", "qWzcsZqaNK-TYkruyQED0Q"], ["updated_at", Tue, 25 Sep 2012 16:15:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:39 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$CN6qQj/6p73Rbcqc934Y..Io.d7cixc7WW84KUFBGsh1AWuSBidmq"], ["remember_token", "0UUfiUGxlSDUEhhR2LFkaA"], ["updated_at", Tue, 25 Sep 2012 16:15:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.9ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$LTE/ivFB4Hu0DW93mISPQ.pn0.R1cDXLg1MQO/AiSZhJMiPuV2pQS"], ["remember_token", "Cv2h7g6h1mcJvviWPf4tcw"], ["updated_at", Tue, 25 Sep 2012 16:15:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$6jxOszwB7zn4ehgL7X3GVuQA7fe4CpObfVQ6HpOdseJwidJPir0PK"], ["remember_token", "_kgHBTHQkx5t3iMgPVMbug"], ["updated_at", Tue, 25 Sep 2012 16:15:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:42 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$3x2CoYJbWbCXateO5EsFEOmAuYXd1Mzd7N8YmiLFOMGH0IQF8utsO"], ["remember_token", "7aycGDqdPsTIEKoZh4_hlg"], ["updated_at", Tue, 25 Sep 2012 16:15:42 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:43 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$QxUpK5JJs3ecYPSGXB84PuxFyw5VbhnyCbWmTpjCnIYhXi/DGO08."], ["remember_token", "KbVzPD3y6Pgv0juSqsraOg"], ["updated_at", Tue, 25 Sep 2012 16:15:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:15:45 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$F1rglVjZJRyH1PShjPzNpO19Ir2EAVivBoEhJ33i/PXbhu0wAThL2"], ["remember_token", "HrmbXpzAA1ymsHTROkJXmw"], ["updated_at", Tue, 25 Sep 2012 16:15:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:15:45 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:15:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:15:45 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:15:45 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:32 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$4lgPdNwlnTEW1xJJpPHWq.bbHXs4h4UOGJJO5e6FVe0s7y9p83pMq"], ["remember_token", "eDkzM2AivhgBMvkXIucqjA"], ["updated_at", Tue, 25 Sep 2012 16:17:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:33 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$Eog52HBhcKQAxjweFhBapeUuTYz.mEwZidMfT15IFpI0wjVy1XFSq"], ["remember_token", "drpG-5T8CRv4Wd_tmUFfOw"], ["updated_at", Tue, 25 Sep 2012 16:17:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:33 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$/Nf2FVw02XhDPQB7TXUXh.h3r8DUCLsyJalozNPJHIksl1S1nS7Du"], ["remember_token", "anxX7jETWCPOUC5OutO3Wg"], ["updated_at", Tue, 25 Sep 2012 16:17:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$DrUDob526iOYveB1n7H0kO5Ew/C4LaG80pVM6blERrirUiWTPfC3e"], ["remember_token", "HcLIF0PL83B0-42mrUfWPA"], ["updated_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$9w8EFVg9R8g.LOfuKDk1v.y3y7mP.lxpycKRYup0KECRONApilb96"], ["remember_token", "4BDbw9J6-WrEh9hmkvC8qQ"], ["updated_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$wE6z9DhlbePvC8oHlKofNO2ff0DF7hMQzPssD9CszlWiOHqJTcbLu"], ["remember_token", "4Z0xaJVfZCo9npBmOZEyVg"], ["updated_at", Tue, 25 Sep 2012 16:17:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:35 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$cuTJSauDChpUYFt0VC98COAB3f1MAaL0E2WCuGlSIQs34aVHVmCry"], ["remember_token", "fondqbcuADKdX4KLPClifA"], ["updated_at", Tue, 25 Sep 2012 16:17:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:40 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$f9kxj32/QN3pjBuzYOotFOrCna0yuUE8Ma12p0maLixQtfcL8MUAy"], ["remember_token", "0mU42RJTQ1U_cNGZD3CUjg"], ["updated_at", Tue, 25 Sep 2012 16:17:40 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:43 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$a4magb6R6pX2RB2kJoL3o.B5adEPoPfKAk/ck/qZe./q7mFjycnOW"], ["remember_token", "f-uIPWFQvmRpNYT6ZyynQw"], ["updated_at", Tue, 25 Sep 2012 16:17:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:43 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$JwNvLWZf1qgyASCDG6lYyuwTx5BbTHLvFMhdqITYBinbCZR9IcqtK"], ["remember_token", "RfjCs2VSeiJtSKJMX1_rmg"], ["updated_at", Tue, 25 Sep 2012 16:17:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:44 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$GQCn/Vp2dxGjqZsDTvX4W.E7xz4DIOc2JgYJlCngeeckEMaxQUdGW"], ["remember_token", "qflS-cy7-jbnm95btHiVCA"], ["updated_at", Tue, 25 Sep 2012 16:17:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:45 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$ZOwgkd6ct02gRbcECfPGEuH19N6fB1vHpB7IP8K/6hOXsrqfbq4iy"], ["remember_token", "nOfqninsYn6Dkx4v1b292Q"], ["updated_at", Tue, 25 Sep 2012 16:17:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$LnajlY3GfUzWLty4Q80Xl.9zPCMlCCfa9pGdGRFKSyPI.NSPOVYDC"], ["remember_token", "8MgIRlk7BJaUfgKr_6yT3w"], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:17:46 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:17:46 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$oxrGin2SUMP3O2OWnzprfe8JRSVITra5HPiBQjbIJJRgt.DbJVpCa"], ["remember_token", "wGDqxfsz3bVNcQJ7_3SJWw"], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:17:46 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:17:46 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:17:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "microposts" WHERE "microposts"."id" = ?  [["id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-25 12:44:56 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (339.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (9.5ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 400ms (Views: 378.7ms | ActiveRecord: 3.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-25 12:44:56 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo.COM') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@f.b.org') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('frst.lst@foo.jp') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('a+b@baz.cn') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:02 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$zl50EQE5nSJTdBv6qs.ZwOKtrPWuf1uPk6NHZBAWDmlTCPBaqgJha"], ["remember_token", "lQNjHa8vjFU-cAziesCYNg"], ["updated_at", Tue, 25 Sep 2012 16:45:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@foo,com') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user_at_foo.org') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar_baz.com') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('foo@bar+baz.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:03 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$xxRdS1zF6.h12zq4/x98YOmkWuFjvcC89dIL5wEjlDUiv/db8kkOy"], ["remember_token", "1NW_CzQO5XFZX8coZiwjug"], ["updated_at", Tue, 25 Sep 2012 16:45:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:04 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$xy05KdHzfl2gXnA8Ib3Qk.YzXUP8MmaVxeYwsL2pzHQrvQYD4yt2e"], ["remember_token", "qdPl4nS_H_rkXFiq_GBAWg"], ["updated_at", Tue, 25 Sep 2012 16:45:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:05 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$xqlyngcwgqdlsE8aY0vcqOM9IZdpD7LFjjl1KK8Eg0pS3v/hk.Peu"], ["remember_token", "cq6VqhvZwGDDjeUACQjn0w"], ["updated_at", Tue, 25 Sep 2012 16:45:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$qWoIhf/5ROQRDdo/hxMjmukxh/FXOK9DAHBtifkzqJcQOW5uv5IV2"], ["remember_token", "-taTJ4qt8Xuf08v3TIFl4Q"], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:45:06 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:45:06 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$yWer2yvSAAggAPuP58IoE.LScT9TKiDSawrTWsfgGtyj01.TM8FZ."], ["remember_token", "x3KnsgHS1UYumBoLoSDhIA"], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Lorem ipsum"], ["created_at", Mon, 24 Sep 2012 16:45:06 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Lorem ipsum"], ["created_at", Tue, 25 Sep 2012 15:45:06 UTC +00:00], ["updated_at", Tue, 25 Sep 2012 16:45:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "microposts" WHERE "microposts"."id" = ?  [["id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "microposts" WHERE "microposts"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:07 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$10$DYD76iEXP2S17zoFkEBJqubopfTMM1ObaN8uAF5zWuAc/oStOLyKW"], ["remember_token", "nKcbKeYqaXSRd8GoZU8wZA"], ["updated_at", Tue, 25 Sep 2012 16:45:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:08 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:08 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:08 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (10.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:09 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$NDceNTgZvza3kt6T8EJa6uSwimB8/upU81B/pgnC76GMQ3oEAqIv2"], ["remember_token", "TmTSiqt6aIXIeEumXaSwtA"], ["updated_at", Tue, 25 Sep 2012 16:45:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"person_1@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'person_1@example.com' LIMIT 1
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 399ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-09-25 12:45:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'TmTSiqt6aIXIeEumXaSwtA' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+  [1m[35m (2.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:09 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:09 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$HG1YvnbPmmwFcilu3DUJquXJtj84o4h8UDk1CqpKxwEah7P3SHx6W"], ["remember_token", "GnSmKS_13UvSvULJxBUxAw"], ["updated_at", Tue, 25 Sep 2012 16:45:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"person_2@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'person_2@example.com' LIMIT 1[0m
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 399ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-09-25 12:45:10 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1[0m
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'GnSmKS_13UvSvULJxBUxAw' LIMIT 1
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:10 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:10 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$6phX0vFOpE4ixeBMUt5LCOFS.xSF1AZ/KWMoVJEybINVgCrydRrTa"], ["remember_token", "r7xf7frPVyEJmhi4AfZsGQ"], ["updated_at", Tue, 25 Sep 2012 16:45:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"person_3@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'person_3@example.com' LIMIT 1
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 403ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-09-25 12:45:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'r7xf7frPVyEJmhi4AfZsGQ' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:11 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_4@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:11 UTC +00:00], ["email", "person_4@example.com"], ["name", "Person 4"], ["password_digest", "$2a$10$OQVkLo3b7uJUuF7LUEkE9e1X12hs0OXQ.xeeuBuLsSS2vJ5sKvmJ."], ["remember_token", "Vy_CO-qJUmIsRAz3vb80EA"], ["updated_at", Tue, 25 Sep 2012 16:45:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"person_4@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'person_4@example.com' LIMIT 1[0m
+Redirected to http://www.example.com/users/1
+Completed 302 Found in 390ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1[0m
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Vy_CO-qJUmIsRAz3vb80EA' LIMIT 1
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by SessionsController#new as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-25 12:45:12 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_5@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:12 UTC +00:00], ["email", "person_5@example.com"], ["name", "Person 5"], ["password_digest", "$2a$10$kfSFUC1YSK.KTTgpHV61IuqQzeCXihMaGW.T4KIPfQQaM2EJdF0bu"], ["remember_token", "73pGZCPGxxXvF0dkEglrbw"], ["updated_at", Tue, 25 Sep 2012 16:45:12 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_6@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00], ["email", "person_6@example.com"], ["name", "Person 6"], ["password_digest", "$2a$10$vexc3Y1cVSgSjtz..6OhFu22RPiN9rkrMA7ceXywNlqnGn6.NmUE6"], ["remember_token", "pmwSKcvyIG4tXnQmaE0lOw"], ["updated_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_7@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00], ["email", "person_7@example.com"], ["name", "Person 7"], ["password_digest", "$2a$10$JFGaC2eoABsf7A9hjlWMF.Gkr/XV/2w7ZKs2wo3YbGFV8Ryhumy7S"], ["remember_token", "Q3vIBHuAyOsQ-n7d-sGinQ"], ["updated_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_8@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00], ["email", "person_8@example.com"], ["name", "Person 8"], ["password_digest", "$2a$10$e8235JGCYRoY0zryeHmpGutbL1SPne2HUF/Xmro7e3UsjZFpFBOAu"], ["remember_token", "RrjiOKEKQ9N4zReUXmFfvg"], ["updated_at", Tue, 25 Sep 2012 16:45:13 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_9@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:14 UTC +00:00], ["email", "person_9@example.com"], ["name", "Person 9"], ["password_digest", "$2a$10$NuiSv6rSEiexBGisM3rLDe3Vdaebjnj2UwC6WAr.y6O7QTBCWPQAW"], ["remember_token", "FyV7jFb4DDXNat9oHYPDtw"], ["updated_at", Tue, 25 Sep 2012 16:45:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_10@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:14 UTC +00:00], ["email", "person_10@example.com"], ["name", "Person 10"], ["password_digest", "$2a$10$4vRDkiybCFAJYaromdmCCeh1NMRAxxwbaNKgHBZ4jq5Mw9DNVsKky"], ["remember_token", "-3OstMLVxPwYkA9LGyK7Jg"], ["updated_at", Tue, 25 Sep 2012 16:45:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_11@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00], ["email", "person_11@example.com"], ["name", "Person 11"], ["password_digest", "$2a$10$hw7ABTcNSDXM.i33iHhJPOqnikOc74akgUoOkgep9eS/81YFizQUC"], ["remember_token", "kviOuYyNxjiuEDBi9qv1_g"], ["updated_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_12@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00], ["email", "person_12@example.com"], ["name", "Person 12"], ["password_digest", "$2a$10$6m0K2QvmP68/MF0tnrRacuEzR82iNAJzDAoXEpgkZmnI6unLs09vm"], ["remember_token", "XgcMnIvvuFICiLoR7sSb_g"], ["updated_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_13@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00], ["email", "person_13@example.com"], ["name", "Person 13"], ["password_digest", "$2a$10$dQHrB68MpyAtGdb5SlfivuqUi2SCPl13L/Qo0NwGRw.THaInnr6Ha"], ["remember_token", "9ayAYMFQWImIpkhOCJq1Rg"], ["updated_at", Tue, 25 Sep 2012 16:45:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_1@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 17:06:10 UTC +00:00], ["email", "person_1@example.com"], ["name", "Person 1"], ["password_digest", "$2a$10$XJna./IeS/WYfkBY6r7DDubMVuTJv1vGZNraECxSGo21qHHswye3C"], ["remember_token", "abOOONmiRvGktuWX2f4Njg"], ["updated_at", Tue, 25 Sep 2012 17:06:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_2@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 17:06:11 UTC +00:00], ["email", "person_2@example.com"], ["name", "Person 2"], ["password_digest", "$2a$10$zktFX/csUgPfILlJtfYtBOh1rK9yE2KFYXz8uC54acL4W840nB6Zu"], ["remember_token", "v1hYRo26YdbxQ-xPPV2NIA"], ["updated_at", Tue, 25 Sep 2012 17:06:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('person_3@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 25 Sep 2012 17:06:11 UTC +00:00], ["email", "person_3@example.com"], ["name", "Person 3"], ["password_digest", "$2a$10$RjgzHf1/592MCU4H4eVvqucOIw6v3jtORXjFEwHa9lmqVjRpEKiP6"], ["remember_token", "XrmsLElOAJ7wZuL1VHBYRw"], ["updated_at", Tue, 25 Sep 2012 17:06:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
